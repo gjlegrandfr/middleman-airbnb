@@ -1,0 +1,58 @@
+<!-- source/flats/show.html.erb -->
+
+<!-- Access data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+<!-- Inject flat data in template -->
+<div class="container">
+  <div id="show">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="card">
+          <div class="card-category"><%= flat.city_name %></div>
+          <div class="card-description">
+            <h3><%= flat.name %></h3>
+            <p><%= flat.description %></p>
+            <p><%= flat.city_name %></p>
+          </div>
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class:"card-user" %>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="booking-form">
+          <h2>Book this flat</h2>
+          <form>
+            <div class="row">
+              <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="Check in">
+              </div>
+              <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="check out">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1"></label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <% (1..flat.capacity).each_with_index do |_, index| %>
+                      <option><%= index + 1 %>  guest<%= "s" if index > 0 %></option>
+                    <% end %>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <button type="submit" class="btn btn-primary btn-block">Book it</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+
+
