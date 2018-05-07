@@ -7,15 +7,15 @@
   content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Use the title from a page's frontmatter if it has one -->
   <title></title>
-  <link href="stylesheets/application-a634d66d.css" rel="stylesheet" />
-  <script src="javascripts/application-93de88c9.js"></script>
-  <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
+  <link href="../stylesheets/application-a634d66d.css" rel="stylesheet" />
+  <script src="../javascripts/application-93de88c9.js"></script>
+  <link href="../images/favicon-f15af148.png" rel="icon" type="image/png" />
 </head>
 <body>
   <div class="navbar-wagon">
   <!-- Logo -->
   <a href="/" class="navbar-wagon-brand">
-    <img src="images/logo-acc9c0ec.png" alt="logo" />
+    <img src="../images/logo-acc9c0ec.png" alt="logo" />
   </a>
 
   <!-- Right Navigation -->
@@ -49,25 +49,63 @@
   </div>
 </div>
    <!-- inject layouts/_navbar.html.erb -->
-  <div class="container">
-  <div id="about">
-    <div class="about-content">
-      <h1>This template is built with <i class="fa fa-heart"></i> by</h1>
-      <ul class="list-inline text-center">
-        <li>
-          <img src="https://kitt.lewagon.com/placeholder/users/gjlegrandfr" class="avatar-extralarge img-circle" alt="Gjlegrandfr" />
-          <h3>Gjlegrandfr</h3>
-          <i class="fa fa-github"></i>
-        </li>
-        <li>
-          <img src="https://kitt.lewagon.com/placeholder/users/hugosola" class="avatar-extralarge img-circle" alt="Hugosola" />
-          <h3>Hugosola</h3>
-          <i class="fa fa-github"></i>
-        </li>
-      </ul>
-    </div>
+  <!-- source/flats/show.html.erb -->
+
+<!-- Access data.flats with owner's name as key -->
+<!-- Inject flat data in template -->
+<div class="container">
+  <div id="show">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="card">
+          <div class="card-category">Tokyo, Japan</div>
+          <div class="card-description">
+            <h3>Boris' home</h3>
+            <p>Small flat in Tokyo</p>
+            <p>Tokyo, Japan</p>
+          </div>
+          <img src="https://kitt.lewagon.com/placeholder/users/papillard" class="card-user" alt="Papillard" />
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="booking-form">
+          <h2>Book this flat</h2>
+          <form>
+            <div class="row">
+              <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="Check in">
+              </div>
+              <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="check out">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1"></label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1  guest</option>
+                      <option>2  guests</option>
+                      <option>3  guests</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <button type="submit" class="btn btn-primary btn-block">Book it</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
+</div>
+</div>
+
+
                       <!-- Page content is injected here -->
   <div class="footer">
   <div class="footer-links">
